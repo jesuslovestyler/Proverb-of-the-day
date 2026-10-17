@@ -42,6 +42,9 @@ button:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline
 .source{font-size:.9rem;color:var(--muted);text-align:center;margin:0}
 .source a{color:var(--accent-deep);text-underline-offset:3px}
 .back-top{display:block;width:max-content;margin:22px auto 0;border:0;background:none;color:var(--accent-deep);font-weight:700;cursor:pointer;padding:10px}
+.home-btn{position:absolute;top:0;right:0;display:inline-flex;align-items:center;min-height:36px;padding:6px 14px;border:1px solid var(--rule);border-radius:999px;background:var(--paper-deep);color:var(--accent-deep);font-weight:700;font-size:.9rem;text-decoration:none}
+.home-btn:hover{border-color:var(--accent)}
+.home-btn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 @media(max-width:520px){.page{padding-left:17px;padding-right:17px}.controls{grid-template-columns:44px minmax(0,1fr) 44px}.today-btn{grid-column:1/-1;width:100%}.chapter-head{display:block}.verse-count{display:block;margin-top:8px}.scripture{line-height:1.75}.verse{margin-bottom:.88em}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -49,6 +52,7 @@ button:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline
 <body>
 <main class="page">
 <section class="intro" aria-labelledby="page-title">
+<a class="home-btn" href="https://jesuslovestyler.com/">⌂ Home</a>
 <p class="date" id="today-date"></p>
 <h1 id="page-title">Wisdom for<br>this day.</h1>
 <p class="lede">One chapter of Proverbs for each day of the month.</p>
@@ -63,7 +67,7 @@ button:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline
 <div class="chapter-head"><h2 id="chapter-title"></h2><span class="verse-count" id="verse-count"></span></div>
 <div class="scripture" id="scripture"></div>
 <div class="endmark" aria-hidden="true"><span>❦</span></div>
-<p class="source">World English Bible (public domain) · <a href="https://github.com/GITenberg/The-World-English-Bible-WEB-Proverbs_8247/releases/download/0.1.0/book.pdf" target="_blank" rel="noopener">Text source</a></p>
+<p class="source">World English Bible (public domain) · <a href="https://github.com/GITenberg/The-World-English-Bible-WEB-Proverbs_8247/releases/download/0.1.0/book.pdf">Text source</a></p>
 <button class="back-top" id="back-top" type="button">Back to chapter top</button>
 </section>
 </main>
@@ -162,5 +166,6 @@ document.getElementById('today').addEventListener('click', () => render(todayCha
 document.getElementById('back-top').addEventListener('click', () => document.querySelector('.chapter-head').scrollIntoView({behavior:'smooth', block:'start'}));
 render(todayChapter, false);
 </script>
+<script data-goatcounter="https://jesuslovestyler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
