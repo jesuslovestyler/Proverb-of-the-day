@@ -1,7 +1,8 @@
 # Proverb of the Day
 
-A daily dose of wisdom — the chapter of Proverbs matching today's date, all 31 chapters included.
+A proverb for each day of the month — Proverbs has 31 chapters, one for every day — drawn from the World English Bible, with today's wisdom one tap away.
 
-Live page: https://jesuslovestyler.github.io/Proverb-of-the-day/
+**Live:** https://jesuslovestyler.github.io/Proverb-of-the-day/
+**Home:** https://jesuslovestyler.com/
 
-Made by Noki for Tyler. Public domain — share freely.
+Scripture is quoted from the World English Bible, a public-domain translation. Released into the public domain (Unlicense — see LICENSE). Built by Tyler with Noki.
